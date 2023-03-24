@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event in JS</title>
+  </head>
+  <body>
+    <input type="text" id="brand" />
+    <button onclick="test()">Clicl ME</button>
+    <!-- <button onfocus="test()">Clicl ME</button> -->
+    <!-- <button onmousemove="test()">Clicl ME</button> -->
+    <script>
+      function test() {
+        var inp = document.getElementById("brand");
+        // inp = document.getElementById("brand").value;
+
+        console.log(inp.value);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="addToLocalStorage()">Add to Local Storage</button>
+    <button onclick="getFromLocalStorage()">Get from Local Storage</button>
+    <button onclick="append()">Append Local Storage</button>
+    <script>
+      function addToLocalStorage() {
+        console.log("Added");
+        localStorage.setItem("demo", "Internsland");
+      }
+      function getFromLocalStorage() {
+        console.log("Finded");
+        var result = localStorage.getItem("demo");
+        console.log(result);
+      }
+      function append() {
+        console.log("Called");
+        var data = localStorage.getItem("demo");
+        data += " Dell";
+        localStorage.setItem("demo", data);
+      }
+    </script>
+  </body>
+</html>

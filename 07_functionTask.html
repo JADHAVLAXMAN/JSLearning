@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function demo() {
+        console.warn("Demo Function Call");
+      }
+      demo();
+
+      function dd(xx, yy) {
+        console.log(xx);
+        console.log(yy);
+      }
+      dd("Internsland");
+      dd(55);
+      dd(55, 66);
+      function sum(n1, n2) {
+        console.log(n1 + n2);
+      }
+      sum(10, 20);
+      sum(100, 200);
+
+      function sq(p1) {
+        console.log(p1);
+        return p1;
+      }
+      var result = sq(55);
+      console.warn(result);
+      console.clear();
+
+      //   Default Parametarised Funciton
+      function defaultPara(arg = "Internsland") {
+        console.log(arg);
+      }
+      defaultPara();
+      defaultPara(55);
+    </script>
+  </body>
+</html>

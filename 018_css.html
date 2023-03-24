@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+  </head>
+  <body id="body">
+    <h1 id="main">Hello</h1>
+    <input type="color" name="" id="cc" />
+    <button onclick="changeCSS()">Make Red</button>
+    <script>
+      function changeCSS() {
+        console.log("Clicked");
+        document.getElementById("main").style.color = "white";
+        var colorInput = document.getElementById("cc").value;
+        console.log(colorInput);
+        document.getElementById("body").style.backgroundColor = colorInput;
+      }
+    </script>
+  </body>
+</html>

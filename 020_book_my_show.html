@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Site</title>
+    <style>
+      .box {
+        height: 55.8px;
+        width: 55.8px;
+        border: 2px solid gray;
+        display: inline-block;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <div class="card">
+            <div class="card-header">BookMyShow Lite</div>
+            <div class="card-body">
+              <div class="main">
+                <div class="box" onclick="addClass('1')" id="div1">1</div>
+                <div class="box" onclick="addClass('2')" id="div2">2</div>
+                <div class="box" onclick="addClass('3')" id="div3">3</div>
+                <div class="box" onclick="addClass('4')" id="div4">4</div>
+                <div class="box" onclick="addClass('5')" id="div5">5</div>
+                <div class="box" onclick="addClass('6')" id="div6">6</div>
+                <div class="box" onclick="addClass('7')" id="div7">7</div>
+                <div class="box" onclick="addClass('8')" id="div8">8</div>
+                <div class="box" onclick="addClass('9')" id="div9">9</div>
+                <div class="box" onclick="addClass('10')" id="div10">10</div>
+              </div>
+              <div class="main">
+                <div class="box" onclick="addClass('11')" id="div11">11</div>
+                <div class="box" onclick="addClass('12')" id="div12">12</div>
+                <div class="box" onclick="addClass('13')" id="div13">13</div>
+                <div class="box" onclick="addClass('14')" id="div14">14</div>
+                <div class="box" onclick="addClass('15')" id="div15">15</div>
+                <div class="box" onclick="addClass('16')" id="div16">16</div>
+                <div class="box" onclick="addClass('17')" id="div17">17</div>
+                <div class="box" onclick="addClass('18')" id="div18">18</div>
+                <div class="box" onclick="addClass('19')" id="div19">19</div>
+                <div class="box" onclick="addClass('20')" id="div20">20</div>
+              </div>
+              <div class="main">
+                <div class="box" onclick="addClass('21')" id="div21">21</div>
+                <div class="box" onclick="addClass('22')" id="div22">22</div>
+                <div class="box" onclick="addClass('23')" id="div23">23</div>
+                <div class="box" onclick="addClass('24')" id="div24">24</div>
+                <div class="box" onclick="addClass('25')" id="div25">25</div>
+                <div class="box" onclick="addClass('26')" id="div26">26</div>
+                <div class="box" onclick="addClass('27')" id="div27">27</div>
+                <div class="box" onclick="addClass('28')" id="div28">28</div>
+                <div class="box" onclick="addClass('29')" id="div29">29</div>
+                <div class="box" onclick="addClass('30')" id="div30">30  </div>
+              </div>
+              <div class="main">
+                <div class="box" onclick="addClass('31')" id="div31"></div>
+                <div class="box" onclick="addClass('32')" id="div32"></div>
+                <div class="box" onclick="addClass('33')" id="div33"></div>
+                <div class="box" onclick="addClass('34')" id="div34"></div>
+                <div class="box" onclick="addClass('35')" id="div35"></div>
+                <div class="box" onclick="addClass('36')" id="div36"></div>
+                <div class="box" onclick="addClass('37')" id="div37"></div>
+                <div class="box" onclick="addClass('38')" id="div38"></div>
+                <div class="box" onclick="addClass('39')" id="div39"></div>
+                <div class="box" onclick="addClass('40')" id="div40"></div>
+              </div>
+              <div class="main">
+                <div class="box" onclick="addClass('41')" id="div41"></div>
+                <div class="box" onclick="addClass('42')" id="div42"></div>
+                <div class="box" onclick="addClass('43')" id="div43"></div>
+                <div class="box" onclick="addClass('44')" id="div44"></div>
+                <div class="box" onclick="addClass('45')" id="div45"></div>
+                <div class="box" onclick="addClass('46')" id="div46"></div>
+                <div class="box" onclick="addClass('47')" id="div47"></div>
+                <div class="box" onclick="addClass('48')" id="div48"></div>
+                <div class="box" onclick="addClass('49')" id="div49"></div>
+                <div class="box" onclick="addClass('50')" id="div50"></div>
+              </div>
+            </div>
+            <div id="opt"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function addClass(arg) {
+        console.log(arg);
+
+        var x = document
+          .getElementById(`div${arg}`)
+          .classList.contains("bg-success");
+        console.log(x);
+
+        if (x !== true) {
+          document.getElementById(`div${arg}`).classList.add("bg-success");
+        } else {
+          document.getElementById(`div${arg}`).classList.remove("bg-success");
+        }
+        var x = document.querySelectorAll(".bg-success");
+
+        console.log(x.length);
+        document.getElementById(
+          "opt"
+        ).innerHTML = `<div class="alert alert-primary d-flex justify-content-between"><div>You Have Been Selected ${
+          x.length
+        } Seets</div> <div>Bill ${x.length * 500}</div></div>`;
+      }
+    </script>
+  </body>
+</html>

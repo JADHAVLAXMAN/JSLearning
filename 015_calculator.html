@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      .input {
+        padding: 10px;
+        border-radius: 15px;
+        width: 200px;
+      }
+      .calbtn {
+        padding: 10px 19.5px;
+        font-weight: bold;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="input" id="num1" placeholder="Enter a Number" />
+    <input class="input" id="num2" placeholder="Enter a Number" />
+    <br /><br />
+    <button class="calbtn" onclick="calculator('+')">+</button>
+    <button class="calbtn" onclick="calculator('-')">-</button>
+    <button class="calbtn" onclick="calculator('*')">*</button>
+    <button class="calbtn" onclick="calculator('/')">/</button>
+    <button class="calbtn" onclick="calculator('%')">%</button>
+    <button class="calbtn" onclick="calculator('sq')">Sqare</button>
+
+    <script>
+      function calculator(op) {
+        var arg1 = +document.getElementById("num1").value;
+        var arg2 = +document.getElementById("num2").value;
+        if (op == "+") {
+          console.log(`Addition is ${arg1 + arg2}`);
+        } else if (op === "-") {
+          console.log(`Substraction is ${arg1 - arg2}`);
+        } else if (op === "*") {
+          console.log(`Multiplication is ${arg1 * arg2}`);
+        } else if (op === "/") {
+          console.log(`Division is ${arg1 / arg2}`);
+        } else if (op === "%") {
+          console.log(`Mod is ${arg1 % arg2}`);
+        } else if (op === "sq") {
+          console.log(`Sqare of ${arg1} is ${arg1 * arg1}`);
+          console.log(`Sqare of ${arg2} is ${arg2 * arg2}`);
+        } else {
+          return "INVALID";
+        }
+      }
+      // function sum() {
+      //     var arg1 = +document.getElementById("num1").value
+      //     var arg2 = +document.getElementById("num2").value
+      //     console.log(arg1 + arg2);
+      // }
+      // function sub() {
+      //     var arg1 = +document.getElementById("num1").value
+      //     var arg2 = +document.getElementById("num2").value
+      //     console.log(arg1 - arg2);
+      // }
+      // function mul() {
+      //     var arg1 = +document.getElementById("num1").value
+      //     var arg2 = +document.getElementById("num2").value
+      //     console.log(arg1 * arg2);
+      // }
+      // function div() {
+      //     var arg1 = +document.getElementById("num1").value
+      //     var arg2 = +document.getElementById("num2").value
+      //     console.log(arg1 / arg2);
+      // }
+      // function mod() {
+      //     var arg1 = +document.getElementById("num1").value
+      //     var arg2 = +document.getElementById("num2").value
+      //     console.log(arg1 % arg2);
+      // }
+      // function sq() {
+      //     var arg1 = +document.getElementById("num1").value
+      //     var arg2 = +document.getElementById("num2").value
+      //     console.log(`Sqare of ${arg1} ${arg1 * arg1}`);
+      //     console.log(`Sqare of ${arg2} ${arg2 * arg2}`);
+      // }
+    </script>
+  </body>
+</html>

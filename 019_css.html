@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .red {
+        color: red;
+        border: 2px solid red;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="main-heading">Welcome to JS</h1>
+    <button onclick="addRedClass()">Add Class</button>
+    <button onclick="removeRedClass()">Remove Class</button>
+    <button onclick="hasRedClass()">Has Class</button>
+    <script>
+      function addRedClass(params) {
+        document.getElementById("main-heading").classList.add("red");
+      }
+      function removeRedClass(params) {
+        document.getElementById("main-heading").classList.remove("red");
+      }
+      function hasRedClass(params) {
+        var x = document
+          .getElementById("main-heading")
+          .classList.contains("red");
+        console.log(x);
+      }
+    </script>
+  </body>
+</html>
